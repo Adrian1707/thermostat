@@ -46,4 +46,14 @@ describe('Thermostat', function() {
     expect(thermostat.temperature).toEqual(20)
   });
 
+  it('should turn power save on when powerSaveOn function is called', function() {
+    thermostat.powerSaveOn();
+    expect(thermostat.powerSave).toBe("ON")
+  });
+
+  it('should turn power save off when powerSaveOff function is called', function() {
+    thermostat.powerSaveOff();
+    expect(thermostat.powerSave).toBe("OFF")
+  });
+
 });

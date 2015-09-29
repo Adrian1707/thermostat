@@ -27,6 +27,10 @@ Thermostat.prototype.powerSaveOff = function() {
   this.powerSave = "OFF";
 };
 
+Thermostat.prototype.powerSaveOn = function() {
+  this.powerSave = "ON";
+};
+
 Thermostat.prototype.resetButton = function() {
   this.temperature = 20;
 };
