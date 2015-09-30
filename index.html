@@ -11,8 +11,12 @@
 <body onload="t.displayTemp();">
 
 <p id="temp">xxx</p>
-<button onclick="t.upButton();" class="upButton">Increase Temperature</button> <br>
-<button onclick="t.downButton();" class="downButton">Decrease Temperature</button> <br>
-<button onclick="t.resetButton();" class="resetButton">Reset Temperature</button> <br>
+
+<input type="button" id="upButton" class="upButton" value="Increase Temperature"/><br>
+<input type="button" id="downButton" class="downButton" value="Decrease Temperature"/><br>
+<input type="button" id="resetButton" class="resetButton" value="Reset Temperature"/><br><br>
+<p id='ps'>Power Save<p>
+<input type="radio"  name="powerSave" id="powerSaveOn" value="ON">ON<br>
+<input type="radio" name="powerSave" id="powerSaveOff" value="OFF">OFF<br>
 
 </body>
