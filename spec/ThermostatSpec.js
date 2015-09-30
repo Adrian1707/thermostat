@@ -60,4 +60,5 @@ describe('Thermostat', function() {
     expect(thermostat.powerSave).toBe('OFF');
   });
 
+
 });

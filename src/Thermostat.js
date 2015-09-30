@@ -17,7 +17,7 @@ Thermostat.prototype.upButton = function() {
   }
 
   this.temperature += 1;
-  this.displayTemp();
+  changeColor();
 };
 
 Thermostat.prototype.downButton = function() {
@@ -26,24 +26,40 @@ Thermostat.prototype.downButton = function() {
   }
 
   this.temperature -= 1;
-  this.displayTemp();
+  changeColor();
 };
 
 Thermostat.prototype.powerSaveOff = function() {
   this.powerSave = 'OFF';
+  changeColor();
 };
 
 Thermostat.prototype.powerSaveOn = function() {
+  if (this.temperature > this.powerSaveMaxOn) {
+    this.temperature = this.powerSaveMaxOn
+  }
   this.powerSave = 'ON';
+  changeColor();
 };
 
 Thermostat.prototype.resetButton = function() {
   this.temperature = 20;
-  this.displayTemp();
+  changeColor();
 };
 
-Thermostat.prototype.displayTemp = function() {
-  document.getElementById("temp").innerHTML = this.temperature + " degrees";
+Thermostat.prototype.changeColor = function() {
+  if (this.temperature < 18) {
+    document.getElementById('temp').style.color = '#FF0000';
+  }
+  else if (this.temperature > 17 && < 24 ) {
+    document.getElementById('temp').style.color = '#0000FF';
+  }
+  else {
+    document.getElementById('temp').style.color = '#008000';
+  }
 };
+
+
+
 
 t = new Thermostat;
