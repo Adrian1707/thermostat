@@ -1,6 +1,6 @@
-var thermostat = new Thermostat();
-
 $(document).ready(function(){
+
+  thermostat = new Thermostat;
 
   $("#upButton").click(function(){
     thermostat.upButton();
