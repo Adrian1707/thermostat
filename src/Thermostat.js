@@ -15,16 +15,16 @@ Thermostat.prototype.upButton = function() {
   if (this.powerSave == 'OFF' && this.temperature >= this.powerSaveMaxOff) {
     throw 'Temperature cannot be set above 32 degrees when power saving mode is off';
   }
-
-  return this.temperature += 1;
+  var this.temperature = parseInt( j.text());
+  j.text( this.temperature + 1 );
 };
 
 Thermostat.prototype.downButton = function() {
-  if (this.temperature < this.tempmin) {
+  if (this.temperature < 10) {
     throw 'Temperature cannot be set below 10 degrees';
   }
-
-  return this.temperature -= 1;
+  var this.temperature = parseInt( j.text());
+  j.text( this.temperature - 1 );
 };
 
 Thermostat.prototype.powerSaveOff = function() {
@@ -38,5 +38,3 @@ Thermostat.prototype.powerSaveOn = function() {
 Thermostat.prototype.resetButton = function() {
   return this.temperature = 20;
 };
-
-t = new Thermostat;

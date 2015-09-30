@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Thermostat Challenge</title>
+    </head>
+
+<body>
+  <script src='jquery.js'></script>
+  <script type="text/javascript" src="./src/Thermostat.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+
+<input type='button' id='btnUp' value='Increase Temperature'/>
+<input type='button' id='btnDown' value='Decrease Temperature'/>
+<input type='button' id='btnReset' value='Reset Temperature'/>
+<div><span>20</span> degrees</div>
+
+<script>
+
+$( "#btnUp" ).click(function() {
+ upButton( $( "span:first" ));
+});
+
+$( "#btnDown" ).click(function() {
+ downButton( $( "span:first" ) );
+});
+
+$( "#btnReset" ).click(function() {
+ resetButton( $( "span:first" ) );
+});
+
+
+function resetButton( j ) {
+ var n = parseInt( j.text(20));
+}
+
+
+
+
+</script>
+
+
+</body>
