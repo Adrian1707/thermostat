@@ -1,0 +1,81 @@
+.upButton{
+-moz-border-radius:6px;
+-webkit-border-radius:6px;
+border-radius: 6x;
+border: 1px solid #ABABAB;
+padding: 15px 0px;
+margin: 0 auto;
+width: 224px;
+display: block;
+color: #434953;
+text-transform: uppercase;
+font: 182% "League Gothic", Helvetica, Arial, sans-serif;
+text-decoration:none;
+text-align:center;
+}
+
+.upButton:hover{
+border: 1px solid #ABABAB;
+color: #303030;
+-webkit-box-shadow: 0px 0px 5px rgba(0,0,0,0.10) inset;
+-moz-box-shadow: 0px 0px 5px rgba(0,0,0,0.10) inset;
+box-shadow: 0px 0px 5px rgba(0,0,0,0.10) inset;
+background-color: #B20000;
+}
+
+.downButton{
+-moz-border-radius:6px;
+-webkit-border-radius:6px;
+border-radius: 6x;
+border: 1px solid #ABABAB;
+padding: 15px 0px;
+margin: 0 auto;
+width: 224px;
+display: block;
+color: #434953;
+text-transform: uppercase;
+font: 182% "League Gothic", Helvetica, Arial, sans-serif;
+text-decoration:none;
+text-align:center;
+}
+
+.downButton:hover{
+  border: 1px solid #ABABAB;
+  color: #303030;
+  -webkit-box-shadow: 0px 0px 5px rgba(0,0,0,0.10) inset;
+  -moz-box-shadow: 0px 0px 5px rgba(0,0,0,0.10) inset;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.10) inset;
+  background-color: #0066FF;
+}
+
+
+.resetButton{
+  -moz-border-radius:6px;
+  -webkit-border-radius:6px;
+  border-radius: 6x;
+  border: 1px solid #ABABAB;
+  padding: 15px 0px;
+  margin: 0 auto;
+  width: 224px;
+  display: block;
+  color: #434953;
+  text-transform: uppercase;
+  font: 182% "League Gothic", Helvetica, Arial, sans-serif;
+  text-decoration:none;
+  text-align:center;
+}
+
+.resetButton:hover{
+border: 1px solid #ABABAB;
+color: #303030;
+-webkit-box-shadow: 0px 0px 5px rgba(0,0,0,0.10) inset;
+-moz-box-shadow: 0px 0px 5px rgba(0,0,0,0.10) inset;
+box-shadow: 0px 0px 5px rgba(0,0,0,0.10) inset;
+background-color: #007A00;
+}
+
+
+#temp{
+  font: 182% "League Gothic", Helvetica, Arial, sans-serif;
+
+}

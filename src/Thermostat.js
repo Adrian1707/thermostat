@@ -1,6 +1,6 @@
 function Thermostat() {
   this.temperature = 20;
-  this.tempmin = 10;
+  this.tempmin = 11;
   this.powerSave = 'ON';
   this.powerSaveMaxOn = 25;
   this.powerSaveMaxOff = 32;
@@ -8,33 +8,42 @@ function Thermostat() {
 
 Thermostat.prototype.upButton = function() {
 
-  if (this.powerSave == 'ON'  && this.temperature >= this.powerSaveMaxOn) {
+  if (this.powerSave == 'ON' && this.temperature >= this.powerSaveMaxOn) {
     throw 'Temperature cannot be set above 25 degrees when power saving mode is on';
   }
 
   if (this.powerSave == 'OFF' && this.temperature >= this.powerSaveMaxOff) {
     throw 'Temperature cannot be set above 32 degrees when power saving mode is off';
   }
-  var this.temperature = parseInt( j.text());
-  j.text( this.temperature + 1 );
+
+  this.temperature += 1;
+  this.displayTemp();
 };
 
 Thermostat.prototype.downButton = function() {
-  if (this.temperature < 10) {
+  if (this.temperature < this.tempmin) {
     throw 'Temperature cannot be set below 10 degrees';
   }
-  var this.temperature = parseInt( j.text());
-  j.text( this.temperature - 1 );
+
+  this.temperature -= 1;
+  this.displayTemp();
 };
 
 Thermostat.prototype.powerSaveOff = function() {
-  return this.powerSave = 'OFF';
+  this.powerSave = 'OFF';
 };
 
 Thermostat.prototype.powerSaveOn = function() {
-  return this.powerSave = 'ON';
+  this.powerSave = 'ON';
 };
 
 Thermostat.prototype.resetButton = function() {
-  return this.temperature = 20;
+  this.temperature = 20;
+  this.displayTemp();
 };
+
+Thermostat.prototype.displayTemp = function() {
+  document.getElementById("temp").innerHTML = this.temperature + " degrees";
+};
+
+t = new Thermostat;
