@@ -27,4 +27,22 @@ $(document).ready(function(){
     $('#temp').text(thermostat.temperature);
   });
 
+  var cityName = document.getElementById('weather_city');
+
+function fireAjax(data) {
+
+  $.ajax({
+   url: data.url,
+   success: function(data){
+   $('#weather').html('Current Temperature    ' + (data.main.temp - 273).toFixed(1));
+  }
+ });
+}
+
+$("#weather_city").submit(function(event) {
+  var newURL = 'http://api.openweathermap.org/data/2.5/weather?q=' + $('#city_weather').val();
+  fireAjax({url:newURL});
+  event.preventDefault();
+});
+
 });

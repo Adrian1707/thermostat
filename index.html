@@ -4,15 +4,22 @@
       <title>Thermostat Challenge</title>
       <link rel='stylesheet' type='text/css' href='style.css'>
     </head>
+<body>
 
+<h2 id="weather"></h2>
 
-<p id="temp">20</p>
+<form id='weather_city'>
+<input type="text" name="city" id="city_weather" placeholder='Change City'/></br>
+<input type="submit" name="Submit city" value="Submit City"/>
+</form>
+
+<h2 id = "degrees"><span id="temp">20</span>&deg;C</h2>
 
 <input type="button" id="upButton" class="upButton" value="Increase Temperature"/><br>
 <input type="button" id="downButton" class="downButton" value="Decrease Temperature"/><br>
 <input type="button" id="resetButton" class="resetButton" value="Reset Temperature"/><br><br>
 <p id='ps'>Power Save<p>
-<input type="radio"  name="powerSave" id="powerSaveOn" value="ON">ON<br>
+<input type="radio"  name="powerSave" id="powerSaveOn" value="ON" checked="checked">ON<br><br>
 <input type="radio" name="powerSave" id="powerSaveOff" value="OFF">OFF<br>
 <script src='jquery.js'></script>
 <script type="text/javascript" src="./src/Thermostat.js"></script>
