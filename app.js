@@ -34,7 +34,9 @@ function fireAjax(data) {
   $.ajax({
    url: data.url,
    success: function(data){
-   $('#weather').html('Current Temperature    ' + (data.main.temp - 273).toFixed(1));
+   $('#city').html("Current city: " + (data.name));
+   $('#weather_temp').html('Current Temperature    ' + (data.main.temp - 273).toFixed(1));
+   $('#weather_humid').html("Humidity is " + (data.main.humidity));
   }
  });
 }
