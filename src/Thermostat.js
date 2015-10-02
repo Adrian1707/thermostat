@@ -17,7 +17,7 @@ Thermostat.prototype.upButton = function() {
   }
 
   this.temperature += 1;
-    this.changeColor();
+  this.changeColor();
 };
 
 Thermostat.prototype.downButton = function() {
@@ -50,11 +50,9 @@ Thermostat.prototype.resetButton = function() {
 Thermostat.prototype.changeColor = function() {
   if (this.temperature <= 18) {
     document.getElementById('temp').style.color = 'green';
-  }
-  else if (this.temperature < 25) {
+  } else if (this.temperature < 25) {
     document.getElementById('temp').style.color = 'yellow';
-  }
-  else {
-  document.getElementById('temp').style.color = 'red';
+  } else {
+    document.getElementById('temp').style.color = 'red';
   }
 };

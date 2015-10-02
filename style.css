@@ -1,30 +1,25 @@
-#temp{
+#temp {
   font: 300% "League Gothic", Helvetica, Arial, sans-serif;
   text-align: center;
 }
-
-#degrees{
+#degrees {
   text-align: center;
 }
-
-#ps{
+#ps {
   font: 182% "League Gothic", Helvetica, Arial, sans-serif;
   text-align: center;
 }
-
-#powerSaveOn{
+#powerSaveOn {
   margin-left: 650px;
   text-align: center;
 }
-
-#powerSaveOff{
+#powerSaveOff {
   margin-left: 650px;
   text-align: center;
 }
-
-.upButton{
-  -moz-border-radius:6px;
-  -webkit-border-radius:6px;
+.upButton {
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
   border-radius: 6x;
   border: 1px solid #ABABAB;
   padding: 15px 0px;
@@ -34,22 +29,20 @@
   color: #434953;
   text-transform: uppercase;
   font: 100% "League Gothic", Helvetica, Arial, sans-serif;
-  text-decoration:none;
-  text-align:center;
+  text-decoration: none;
+  text-align: center;
 }
-
-.upButton:hover{
+.upButton:hover {
   border: 1px solid #ABABAB;
   color: #303030;
-  -webkit-box-shadow: 0px 0px 5px rgba(0,0,0,0.10) inset;
-  -moz-box-shadow: 0px 0px 5px rgba(0,0,0,0.10) inset;
-  box-shadow: 0px 0px 5px rgba(0,0,0,0.10) inset;
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.10) inset;
+  -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.10) inset;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.10) inset;
   background-color: #B20000;
 }
-
-.downButton{
-  -moz-border-radius:6px;
-  -webkit-border-radius:6px;
+.downButton {
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
   border-radius: 6x;
   border: 1px solid #ABABAB;
   padding: 15px 0px;
@@ -59,23 +52,20 @@
   color: #434953;
   text-transform: uppercase;
   font: 100% "League Gothic", Helvetica, Arial, sans-serif;
-  text-decoration:none;
-  text-align:center;
+  text-decoration: none;
+  text-align: center;
 }
-
-.downButton:hover{
+.downButton:hover {
   border: 1px solid #ABABAB;
   color: #303030;
-  -webkit-box-shadow: 0px 0px 5px rgba(0,0,0,0.10) inset;
-  -moz-box-shadow: 0px 0px 5px rgba(0,0,0,0.10) inset;
-  box-shadow: 0px 0px 5px rgba(0,0,0,0.10) inset;
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.10) inset;
+  -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.10) inset;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.10) inset;
   background-color: #0066FF;
 }
-
-
-.resetButton{
-  -moz-border-radius:6px;
-  -webkit-border-radius:6px;
+.resetButton {
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
   border-radius: 6x;
   border: 1px solid #ABABAB;
   padding: 15px 0px;
@@ -85,15 +75,14 @@
   color: #434953;
   text-transform: uppercase;
   font: 100% "League Gothic", Helvetica, Arial, sans-serif;
-  text-decoration:none;
-  text-align:center;
+  text-decoration: none;
+  text-align: center;
 }
-
-.resetButton:hover{
+.resetButton:hover {
   border: 1px solid #ABABAB;
   color: #303030;
-  -webkit-box-shadow: 0px 0px 5px rgba(0,0,0,0.10) inset;
-  -moz-box-shadow: 0px 0px 5px rgba(0,0,0,0.10) inset;
-  box-shadow: 0px 0px 5px rgba(0,0,0,0.10) inset;
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.10) inset;
+  -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.10) inset;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.10) inset;
   background-color: #007A00;
 }

@@ -27,10 +27,8 @@ $(document).ready(function(){
     $('#temp').text(thermostat.temperature);
   });
 
-  var cityName = document.getElementById('weather_city');
 
 function fireAjax(data) {
-
   $.ajax({
    url: data.url,
    success: function(data){
