@@ -3,6 +3,8 @@
 
 <head>
   <title>Thermostat Challenge</title>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta charset="utf-8">
   <link rel='stylesheet' type='text/css' href='style.css'>
 </head>
 
@@ -19,6 +21,10 @@
 
   <h2 id="degrees">
     <span id="temp">20</span>&deg;C</h2>
+  <div id="floating-panel">
+    <input id="address" type="textbox" placeholder="e.g London">
+    <input id="submit" type="button" value="Geocode">
+  </div>
   <div id='map'></div>
 
   <input type="button" id="upButton" class="upButton" value="Increase Temperature" />
@@ -38,6 +44,6 @@
       <script src='jquery.js'></script>
       <script type="text/javascript" src="./src/Thermostat.js"></script>
       <script type="text/javascript" src="app.js"></script>
-      <script src="https://maps.googleapis.com/maps/api/js"></script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDgGK_dIvvB5lqLx5GVEtRS16FBIK8MXI&signed_in=true&callback=initMap"async defer></script>
       <script type="text/javascript" src="./src/Maps.js"></script>
 </body>
