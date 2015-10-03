@@ -39,8 +39,8 @@ $(document).ready(function() {
     });
   }
 
-  $("#weather_city").submit(function(event) {
-    var newURL = 'http://api.openweathermap.org/data/2.5/weather?q=' + $('#city_weather').val();
+  $("#floating-panel").submit(function(event) {
+    var newURL = 'http://api.openweathermap.org/data/2.5/weather?q=' + $('#address').val();
     fireAjax({
       url: newURL
     });
