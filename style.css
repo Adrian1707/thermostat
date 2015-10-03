@@ -5,6 +5,12 @@
 #degrees {
   text-align: center;
 }
+#map {
+  width: 500px;
+  height: 400px;
+  background-color: #CCC;
+  display: inline-block;
+}
 #ps {
   font: 182% "League Gothic", Helvetica, Arial, sans-serif;
   text-align: center;
